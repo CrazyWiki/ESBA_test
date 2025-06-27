@@ -1,0 +1,58 @@
+target/
+<<<<<<< HEAD
+!.mvn/wrapper/maven-wrapper.jar
+=======
+.idea/
+q!.mvn/wrapper/maven-wrapper.jar
+>>>>>>> origin/unit_3_final_task
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+
+*.iml
+*.ipr
+*.iws
+.idea/modules.xml
+.idea/*
+.idea
+.idea/vcs.xml
+.idea/misc.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+
+.DS_Store
+
+
+# Maven target directory
+/target/
+
+# Logs
+*.log
+

@@ -1,0 +1,6 @@
+{
+  "temperatureUnits": {
+    "initial": "C",
+    "expected": "F"
+  }
+}
