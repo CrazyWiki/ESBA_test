@@ -4,11 +4,6 @@ import lombok.Getter;
 
 @Getter
 public class EnvData {
-    private String protocol;
-    private String domain;
+    private String host;
     private int wait;
-
-    public String getHost() {
-        return protocol + "://" + domain;
-    }
 }

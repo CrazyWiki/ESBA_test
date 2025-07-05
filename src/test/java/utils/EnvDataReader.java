@@ -7,7 +7,9 @@ import models.EnvData;
 
 @UtilityClass
 public class EnvDataReader {
-    private final String ENVIRONMENT_PATH = JsonUtils.RESOURCES_PATH + "environment/";
+    private final String RESOURCES_PATH = "src/test/resources/";
+    private final String ENVIRONMENT_PATH = RESOURCES_PATH + "environment/";
+
     private final ISettingsFile ENVIRONMENT_CONFIG = new JsonSettingsFile("env.json");
 
     private String getCurrentEnvironment() {
@@ -15,6 +17,8 @@ public class EnvDataReader {
     }
 
     public EnvData getEnvData() {
+        System.out.println(Thread.currentThread().getContextClassLoader().getResource("environment/prod.json"));
+
         String envConfigPath = "%s%s.json".formatted(ENVIRONMENT_PATH, getCurrentEnvironment());
         return JsonUtils.deserializeJson(envConfigPath, EnvData.class);
     }
